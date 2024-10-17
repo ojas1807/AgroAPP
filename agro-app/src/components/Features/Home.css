@@ -1,0 +1,77 @@
+/* Home.css */
+
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Main container for home page */
+.home-container {
+    max-width: 1200px; /* Constrain width */
+    margin: 0 auto; /* Center align */
+    padding: 20px;
+    background-image: url('../../images/image.jpg'); /* Set background image */
+    background-size: cover; /* Cover the entire container */
+    background-position: center; /* Center the background */
+    background-repeat: no-repeat; /* Prevent repeat */
+    height: 100vh; /* Make sure it covers full height */
+}
+
+/* Header styling */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(76, 175, 80, 0.8); /* Slightly transparent background */
+    color: white;
+    padding: 15px 30px;
+    border-radius: 8px; /* Rounded corners */
+}
+
+/* Navigation styling */
+.nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav li {
+    cursor: pointer;
+}
+
+/* Features section */
+.features {
+    display: grid; /* Use grid layout */
+    grid-template-columns: repeat(2, 1fr); /* 2 columns */
+    gap: 20px; /* Space between items */
+    margin-top: 20px;
+}
+
+/* Feature styling */
+.feature {
+    background-color: rgba(255, 255, 255, 0.9); /* Slightly transparent white for contrast */
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Soft shadow */
+    padding: 20px;
+    transition: transform 0.3s;
+}
+
+.feature:hover {
+    transform: translateY(-5px); /* Slight lift on hover */
+}
+
+.feature h2 {
+    color: #4CAF50;
+    margin-bottom: 10px;
+}
+
+.feature p {
+    color: #555; /* Dark gray text */
+}
+
+/* Footer */
+.footer {
+    text-align: center;
+    margin-top: 30px;
+    color: #777;
+}
