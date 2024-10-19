@@ -1,20 +1,55 @@
 /* Home.css */
 
 body {
+    height:100%;
+    width:100%;
     margin: 0;
     font-family: 'Arial', sans-serif;
+    overflow-x: hidden; /* Prevent horizontal overflow */
 }
 
 /* Main container for home page */
 .home-container {
     max-width: 1200px; /* Constrain width */
     margin: 0 auto; /* Center align */
-    padding: 20px;
-    background-image: url('../../images/image.jpg'); /* Set background image */
+    padding: 0; /* Remove padding for full width */
+    background-image: url('../../images/image1.jpg'); /* Set background image */
     background-size: cover; /* Cover the entire container */
     background-position: center; /* Center the background */
     background-repeat: no-repeat; /* Prevent repeat */
-    height: 100vh; /* Make sure it covers full height */
+}
+
+/* Navigation Bar Styles */
+.nav {
+    display: flex; /* Use flexbox for horizontal layout */
+    justify-content: space-around; /* Space out navigation items */
+    align-items: center; /* Center items vertically */
+    background-color: rgba(76, 175, 80, 0.8); /* Transparent green background */
+    padding: 5px 0; /* Reduced padding for the navbar */
+    border-bottom: 2px solid #fff; /* White bottom border for separation */
+}
+
+/* Navigation Links */
+.nav a {
+    color: white; /* White text color */
+    text-decoration: none; /* Remove underline */
+    font-size: 18px; /* Font size for links */
+    padding: 10px 20px; /* Padding around links */
+    border-radius: 5px; /* Rounded corners */
+    transition: background-color 0.3s, transform 0.3s; /* Smooth transitions */
+}
+
+/* Hover Effect for Links */
+.nav a:hover {
+    background-color: rgba(255, 255, 255, 0.3); /* Light background on hover */
+    transform: translateY(-2px); /* Slight lift on hover */
+}
+
+/* Active Link Style */
+.nav a.active {
+    background-color: rgba(255, 255, 255, 0.5); /* Active link background */
+    color: #333; /* Darker text for contrast */
+    font-weight: bold; /* Bold text for active link */
 }
 
 /* Header styling */
@@ -28,45 +63,68 @@ body {
     border-radius: 8px; /* Rounded corners */
 }
 
-/* Navigation styling */
-.nav ul {
-    list-style: none;
-    display: flex;
-    gap: 20px;
-}
-
-.nav li {
-    cursor: pointer;
-}
-
 /* Features section */
 .features {
     display: grid; /* Use grid layout */
     grid-template-columns: repeat(2, 1fr); /* 2 columns */
     gap: 20px; /* Space between items */
-    margin-top: 20px;
+    margin: 20px 0; /* Space above and below */
+    padding: 40px; /* Padding for content */
+    background: rgba(255, 255, 255, 0.9); /* Slightly transparent white */
+    border-radius: 8px; /* Rounded corners */
+    height: auto; /* Let the container grow based on content */
+    align-items: center; /* Center items vertically */
 }
 
 /* Feature styling */
 .feature {
-    background-color: rgba(255, 255, 255, 0.9); /* Slightly transparent white for contrast */
+    background-color: #ffffff; /* White background for contrast */
     border-radius: 8px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Soft shadow */
     padding: 20px;
     transition: transform 0.3s;
+    text-align: center; /* Center text */
 }
 
 .feature:hover {
     transform: translateY(-5px); /* Slight lift on hover */
 }
 
-.feature h2 {
-    color: #4CAF50;
-    margin-bottom: 10px;
+.features-title {
+    grid-column: span 2; /* Title spans full width */
+    text-align: center;
+    font-size: 2.5rem; /* Larger font size */
+    margin-bottom: 30px; /* Space below title */
 }
 
-.feature p {
-    color: #555; /* Dark gray text */
+/* Feature icon */
+.feature-icon {
+    font-size: 3rem; /* Size of icons */
+    margin-bottom: 10px; /* Space between icon and title */
+}
+
+/* Other sections styling */
+.about, .how-it-works, .testimonials, .contact {
+    margin: 20px 0; /* Space between sections */
+    padding: 40px; /* Padding for content */
+    background: rgba(255, 255, 255, 0.9); /* Background for readability */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Soft shadow */
+}
+
+.about h2, 
+.how-it-works h2, 
+.testimonials h2, 
+.contact h2 {
+    margin-bottom: 15px; /* Space below section titles */
+}
+
+blockquote {
+    margin: 20px 0; /* Space around blockquotes */
+    padding: 10px 20px; /* Padding for quotes */
+    border-left: 4px solid #76c7c0; /* Highlight color */
+    background: rgba(240, 248, 255, 0.8); /* Light background for quotes */
+    border-radius: 5px; /* Rounded corners */
 }
 
 /* Footer */
