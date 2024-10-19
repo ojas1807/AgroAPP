@@ -22,7 +22,7 @@ const Signup = () => {
     }
 
     // Sending signup data to backend using Axios
-    axios.post('/api/auth/signup', { username, email, password, phoneNo, gender })
+    axios.post('http://localhost:5000/api/auth/signup', { username, email, password, phoneNo, gender })
       .then((response) => {
         // Handle successful signup (e.g., redirect to login or show a success message)
         console.log(response.data.message);

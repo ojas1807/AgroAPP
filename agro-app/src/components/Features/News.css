@@ -1,0 +1,66 @@
+/* News.css */
+
+.news-container {
+    max-width: 800px; /* Set a maximum width for the container */
+    margin: 0 auto; /* Center the container */
+    padding: 20px; /* Add padding around the container */
+    font-family: 'Arial', sans-serif; /* Set a clean font */
+    color: #333; /* Set text color */
+  }
+  
+  .news-title {
+    text-align: center; /* Center the title */
+    margin-bottom: 20px; /* Space below the title */
+    font-size: 2rem; /* Font size for the title */
+    color: #2c3e50; /* Darker color for the title */
+  }
+  
+  .article-card {
+    background-color: #f9f9f9; /* Light background for articles */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    padding: 15px; /* Padding inside the card */
+    margin-bottom: 20px; /* Space between cards */
+  }
+  
+  .article-image {
+    width: 100%; /* Full width for images */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 5px; /* Rounded corners for images */
+  }
+  
+  .article-title {
+    font-size: 1.5rem; /* Title font size */
+    margin: 10px 0; /* Space above and below the title */
+    color: #2980b9; /* Blue color for the title */
+  }
+  
+  .article-description {
+    font-size: 1rem; /* Description font size */
+    margin-bottom: 10px; /* Space below the description */
+  }
+  
+  .read-more {
+    display: inline-block; /* Inline block for button appearance */
+    background-color: #2980b9; /* Button background color */
+    color: white; /* Button text color */
+    padding: 10px 15px; /* Button padding */
+    border-radius: 5px; /* Rounded corners for button */
+    text-decoration: none; /* Remove underline */
+  }
+  
+  .read-more:hover {
+    background-color: #1a639d; /* Darker shade on hover */
+  }
+  
+  .error-message {
+    color: red; /* Error message color */
+    text-align: center; /* Center the error message */
+    font-weight: bold; /* Bold error message */
+  }
+  
+  .no-articles {
+    text-align: center; /* Center the no articles message */
+    color: #666; /* Gray color for the message */
+  }
+  

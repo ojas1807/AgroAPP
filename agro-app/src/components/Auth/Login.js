@@ -103,22 +103,28 @@ import React, { useState } from 'react';
 import axios from 'axios';
 import './Login.css';
 
-const Login = ({ onLogin }) => {
+
+
+
+
+const Login = () => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [errorMessage, setErrorMessage] = useState('');
 
   // Handling form submission
   const handleSubmit = (e) => {
+    console.log(e);
     e.preventDefault();
 
     // Sending login data to backend using Axios
-    axios.post('/api/auth/login', { email, password })
+    axios.post(`http://localhost:5000/api/auth/login`, { email, password })
       .then((response) => {
         // Assuming your backend returns a success response
         if (response.data.token) {
           // If login successful, call onLogin
-          onLogin();
+          //onLogin();
+          window.location.href = "/home";
         }
       })
       .catch((error) => {
